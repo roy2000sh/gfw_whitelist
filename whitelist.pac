@@ -1,4 +1,4 @@
-var wall_proxy = "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080;";
+var wall_proxy = "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1080;";
 var nowall_proxy = "DIRECT;";
 var direct = "DIRECT;";
 var ip_proxy = "DIRECT;";
@@ -1559,6 +1559,8 @@ var white_domains = {"am":{
 "abchina":1,
 "ablesky":1,
 "accgame":1,
+"acfun":1,
+"acgvideo":1,
 "aci-wh":1,
 "acs86":1,
 "acshoes":1,
@@ -9571,6 +9573,7 @@ var white_domains = {"am":{
 "9555":1,
 "9928":1,
 "9998":1,
+"acfun":1,
 "acg":1,
 "bilibili":1,
 "caoxian":1,
@@ -9694,4 +9697,3 @@ function FindProxyForURL(url, host) {
 	}
 	return wall_proxy;
 }
-
