@@ -1,4 +1,4 @@
-var wall_proxy = "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080;";
+var wall_proxy = "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1080;";
 var nowall_proxy = "DIRECT;";
 var direct = "DIRECT;";
 var ip_proxy = "DIRECT;";
@@ -7,8 +7,19 @@ var ip_proxy = "DIRECT;";
  * Copyright (C) 2014 breakwa11
  * https://github.com/breakwa11/gfw_whitelist
  */
-
-var white_domains = {"am":{
+var white_domains = {
+"bz":{
+"icoc":1
+},"io":{
+"xitu":1,
+"jianshu":1,
+},"top":{
+"ttmeiju":1,
+"86game":1,
+"z211":1,
+"wjx":1,
+},"am":{
+"71":1,
 "126":1,
 "51":1
 },"biz":{
@@ -35,6 +46,7 @@ var white_domains = {"am":{
 "yuanyi":1,
 "zhaoming":1
 },"cc":{
+"ttmj":1,
 "0316":1,
 "0738":1,
 "163k":1,
@@ -193,6 +205,7 @@ var white_domains = {"am":{
 "hebei":1,
 "yinshua":1
 },"co":{
+"meijubie":1,
 "425300":1,
 "banzhu":1,
 "hongfeng":1,
@@ -202,6 +215,192 @@ var white_domains = {"am":{
 "xiapu":1,
 "ychdzx":1
 },"com":{
+"tuchuang001":1,
+"800cdn":1,
+"chimeiju":1,
+"meijubie":1,
+"koudaitong":1,
+"gravatar":1,
+"guoziweb":1,
+"meikew":1,
+"kyad88":1,
+"mkv99":1,
+"msj1":1,
+"maccms":1,
+"diyihanju":1,
+"btjson":1,
+"49914":1,
+"kiimg":1,
+"muimg":1,
+"ciimg":1,
+"bvimg":1,
+"tiimg":1,
+"cfimg":1,
+"buimg":1,
+"piimg":1,
+"fuimg":1,
+"nbimg":1,
+"zmz003":1,
+"zmzjstu":1,
+"qhstatic":1,
+"gxfin":1,
+"ksmobile":1,
+"cmcmcdn":1,
+"guazistatic":1,
+"guazi":1,
+"kaola":1,
+"alipcsec":1,
+"cecdc":1,
+"unagi-cn.amazon":1,
+"images-cn-4.ssl-images-amazon":1,
+"images-cn.ssl-images-amazon":1,
+"mukewang":1,
+"guokr":1,
+"88cdn":1,
+"hjapi":1,
+"hubpd":1,
+"jiemian":1,
+"wq96f9":1,
+"000dn":1,
+"videoyi":1,
+"yunfan":1,
+"mgtv":1,
+"hitv":1,
+"6rooms":1,
+"hiido":1,
+"yystatic":1,
+"imgcdc":1,
+"vpimg1":1,
+"dftoutiao":1,
+"to128":1,
+"2345licai":1,
+"gushidaoshi":1,
+"myqcloud":1,
+"chrstatic":1,
+"meixincdn":1,
+"gomeplus":1,
+"bankofchina":1,
+"jun360":1,
+"81js":1,
+"gdxxb":1,
+"doubanio":1,
+"i360mall":1,
+"alibaba":1,
+"58che":1,	
+"baomitu":1,
+"qhimgs4":1,
+"douyu":1,
+"ckaifang":1,
+"tanwan":1,
+"twh5":1,
+"xiongdong":1,
+"ravenjs":1,
+"chinanetcenter":1,
+"chinacache":1,
+"salesforceliveagent":1,
+"mmstat":1,
+"xinnet":1,
+"gvt1":1,
+"qhres":1,
+"btime":1,
+"dhrest":1,
+"qihucdn":1,
+"youcai8888":1,
+"qhupdate":1,
+"qhimgs3":1,
+"vipstatic":1,
+"vpimg4":1,
+"appsimg":1,
+"vpimg3":1,
+"vpimg2":1,
+"jingyu":1,
+"qhimgs0":1,
+"mygame88":1,
+"mygame82":1,
+"img4399":1,
+"4399pk":1,
+"12306bypass":1,
+"pingxx":1,
+"212ys":1,
+"youle55":1,
+"youhaovip":1,
+"ttvdo":1,
+"47ks":1,
+"gm99":1,
+"he2d":1,
+"sdqoi2d":1,
+"faiusr":1,
+"faisys":1,
+"fkw":1,
+"qiyukf":1,
+"biddingx":1,
+"stg8":1,
+"biliapi":1,
+"baidupcs":1,
+"ruanyifeng":1,
+"qcloudcdn":1,
+"win-man":1,
+"weiyun":1,
+"qcloudimg":1,
+"3jia5":1,
+"baidubce":1,
+"aliyun":1,
+"wpjam":1,
+"wpweixin":1,
+"mtyun":1,
+"clouddn":1,
+"cdnjs":1,
+"aspnetcdn":1,
+"upai":1,
+"wstx":1,
+"smzdm":1,
+"163yun":1,
+"acgvideo":1,
+"yiqioffice":1,
+"yiqixie":1,
+"xuetangx":1,
+"tv002":1,
+"51gif":1,
+"soogif":1,
+"sspai":1,
+"mxpnl":1,
+"mixpanel":1,
+"jyimg":1,
+"huomao":1,
+"oneniceapp":1,
+"360":1,
+"qhmsg":1,
+"mogucdn":1,
+"aixifan":1,
+"iblue":1,
+"dnion":1,
+"chinatelecom-ec":1,
+"wangsu":1,
+"webxueyuan":1,
+"liaoxuefeng":1,
+"zybuluo":1,
+"bijishequ":1,
+"gitee":1,
+"appadhoc":1,
+"hupucdn":1,
+"tingyun":1,
+"growingio":1,
+"meiqia":1,
+"ctfile":1,
+"pipipan":1,
+"jianshu":1,
+"sohucs":1,
+"didispace":1,
+"tapdb":1,
+"taptap":1,
+"taptapdada":1,
+"tapimg":1,
+"eshop-switch":1,
+"coolapk":1,
+"gensee":1,
+"imooc":1,
+"idqqimg":1,
+"fliggy":1,
 "0-6":1,
 "0001688":1,
 "001cndc":1,
@@ -3016,6 +3215,7 @@ var white_domains = {"am":{
 "dospy":1,
 "dostor":1,
 "douban":1,
+"doubanio":1,
 "douguo":1,
 "douluodalu123":1,
 "douxie":1,
@@ -3302,6 +3502,7 @@ var white_domains = {"am":{
 "famensi":1,
 "fancai":1,
 "fandian":1,
+"fanqianbb":1,
 "fang":1,
 "fang33":1,
 "fang99":1,
@@ -5901,6 +6102,7 @@ var white_domains = {"am":{
 "qinglanart":1,
 "qingrenw":1,
 "qiniu":1,
+"qnssl":1,
 "qiniucdn":1,
 "qiniudn":1,
 "qinqiner":1,
@@ -8296,6 +8498,9 @@ var white_domains = {"am":{
 "xsren":1
 },"im":{
 "cli":1,
+"netease":1,
+"juejin":1,
+"cli":1,
 "iapps":1,
 "iyy":1,
 "yixin":1
@@ -8322,6 +8527,8 @@ var white_domains = {"am":{
 "qzone":1,
 "ulinix":1
 },"me":{
+"diaodiaode":1,
+"qbox":1,
 "21me":1,
 "bole":1,
 "dzj":1,
@@ -8334,6 +8541,22 @@ var white_domains = {"am":{
 },"mobi":{
 "i1515":1
 },"net":{
+"ousns":1,
+"maccms":1,
+"mkv99":1,
+"tongdun":1,
+"tjzhzw":1,
+"gtags":1,
+"yx-s":1,
+"4399api":1,
+"3304399":1,
+"zhanzhang":1,
+"88rpg":1,
+"jsdelivr":1,
+"sina":1,
+"wt-cn01":1,
+"mingsoft":1,
+"mooctest":1,
 "001sj":1,
 "00615":1,
 "020p":1,
@@ -9260,6 +9483,12 @@ var white_domains = {"am":{
 "zzph":1,
 "zzrc":1
 },"org":{
+"cnmooc":1,
+"icourse163":1,
+"archlinuxcn":1,
+"redyue":1,
+"emacs-china":1,
+"aliapp":1,
 "0513":1,
 "1000plan":1,
 "1203":1,
@@ -9556,6 +9785,10 @@ var white_domains = {"am":{
 },"tm":{
 "stone":1
 },"tv":{
+"zimuzu":1,
+"maoyun":1,
+"fantasy":1,
+"hifly":1,
 "005":1,
 "0438":1,
 "0916":1,
@@ -9662,7 +9895,12 @@ function isInDomains(domain_dict, host) {
 	if (suffix == "cn") {
 		return true;
 	}
-
+	if (suffix == "nd") {
+		return true;
+	}
+	if (suffix == "localhost") {
+		return true;
+	}
 	var domains = domain_dict[suffix];
 	if ( domains === undefined ) {
 		return false;
@@ -9699,4 +9937,3 @@ function FindProxyForURL(url, host) {
 	}
 	return wall_proxy;
 }
-
